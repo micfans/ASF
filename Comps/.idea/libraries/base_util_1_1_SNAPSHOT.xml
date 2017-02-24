@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="base-util-1.1-SNAPSHOT">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/comp-c1/build/intermediates/exploded-aar/org.openpackage.asf/base-util/1.1-SNAPSHOT/res" />
+      <root url="jar://$PROJECT_DIR$/comp-c1/build/intermediates/exploded-aar/org.openpackage.asf/base-util/1.1-SNAPSHOT/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

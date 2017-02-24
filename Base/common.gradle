@@ -1,0 +1,45 @@
+
+
+// ------------deploy-----------------
+
+apply plugin: 'maven'
+
+ext{
+    distVersion = System.properties['dv'] //like SNAPSHOT/RELEASE
+    softVersion = System.properties['sv'] // like 1.0
+    envVersion =  System.properties['ev'] //like dev/test/demo/line
+}
+
+if(!envVersion){
+    envVersion = 'dev'
+}else{
+    envVersion = envVersion.toLowerCase()
+}
+
+if(!softVersion){
+    softVersion = '1.1'
+}
+
+if(!distVersion){
+    distVersion = 'SNAPSHOT'
+}else{
+    distVersion = distVersion.toUpperCase()
+}
+
+ext.mavenVersion = softVersion + '-' + distVersion;
+
+String distLibary=distVersion.toLowerCase()+"s";
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url:  "http://ser.one-job.net:8081/nexus/content/repositories/${distLibary}/"){
+                authentication(userName: "admin" , password: "admin123" )
+            }
+            pom.version = mavenVersion
+            pom.groupId = "org.openpackage.asf"
+            pom.packaging = "aar";
+        }
+    }
+}

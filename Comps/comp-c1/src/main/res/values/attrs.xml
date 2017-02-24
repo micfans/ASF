@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="c1">
+        <attr name="c1_autoStart" format="boolean" />
+        <attr name="c1_fixEnd" format="boolean" />
+        <attr name="c1_viewRows" format="integer" />
+        <attr name="c1_scrollDuration" format="integer" />
+        <attr name="c1_scrollInteval" format="integer" />
+        <attr name="c1_listItemAdapter" format="string"/>
+    </declare-styleable>
+</resources>

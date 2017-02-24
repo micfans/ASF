@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <org.openpackage.asf.comp.c2.CustomSpannableEditText
+        android:id="@+id/editor"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="top">
+
+    </org.openpackage.asf.comp.c2.CustomSpannableEditText>
+
+
+    <org.openpackage.asf.comp.c2.CustomSpannableTextView
+        android:id="@+id/viewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#ff0000"
+        android:layout_height="1dp"></View>
+    <org.openpackage.asf.comp.c2.CustomSpannableTextView
+        android:id="@+id/viewer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

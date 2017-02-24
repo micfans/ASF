@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:c1="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <!-- List -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="ListScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:gravity="right|center_vertical">
+                <Button
+                    android:text="Start"
+                    android:textSize="10dp"
+                    android:onClick="startListScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp" />
+                <Button
+                    android:text="Stop"
+                    android:textSize="10dp"
+                    android:onClick="stopListScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"
+            android:background="#FF909090" />
+
+        <org.openpackage.asf.comp.c1.ListScrollCompView
+            c1:c1_autoStart="true"
+            c1:c1_fixEnd="true"
+            android:id="@+id/listScorllView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </org.openpackage.asf.comp.c1.ListScrollCompView>
+
+    </LinearLayout>
+
+    <!-- Anim -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="AnimScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:gravity="right|center_vertical">
+                <Button
+                    android:text="Start"
+                    android:textSize="10dp"
+                    android:onClick="startAnimScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp" />
+                <Button
+                    android:text="Stop"
+                    android:textSize="10dp"
+                    android:onClick="stopAnimScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"
+            android:background="#FF909090" />
+
+        <org.openpackage.asf.comp.c1.AnimScrollCompView
+            android:id="@+id/animScrollView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </org.openpackage.asf.comp.c1.AnimScrollCompView>
+
+    </LinearLayout>
+
+</LinearLayout>
